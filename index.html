@@ -1,810 +1,504 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLORASINO | Artificial Plants & Flowers</title>
 
-  <title>Artificial plants Manufacturer & Wholesale Supplier | Florasino</title>
+<style>
 
-  <meta name="description" content="Florasino is a professional artificial plants manufacturer and wholesale supplier. Explore artificial green wall, artificial trees and artificial plants for Restaurant，
-shopping mall, home decor and commercial projects.">
+* {
+    box-sizing: border-box;
+}
 
-  <meta name="keywords" content="artificial green wall, artificial plant wall, artificial plants manufacturer, artificial plants wholesale, artificial plants supplier, faux living wall, vertical garden, artificial trees">
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
 
-  <meta name="robots" content="index, follow">
+header {
+    background: #fff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
 
-  <link rel="canonical" href="https://florasino.com/">
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #234b35;
+}
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #26332d;
-      line-height: 1.6;
-      background: #ffffff;
-    }
+nav a:hover {
+    color: #2d7048;
+}
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+.hero {
+    background: #315b42;
+    color: white;
+    padding: 120px 8%;
+    text-align: center;
+}
 
-    .container {
-      width: 92%;
-      max-width: 1180px;
-      margin: 0 auto;
-    }
+.hero h1 {
+    font-size: 55px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 25px;
+    background: white;
+    color: #315b42;
+    text-decoration: none;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title h2 {
+    font-size: 35px;
+    color: #234b35;
+}
+
+/* Products */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.product-image {
+    height: 220px;
+    background: #dfe8df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #607566;
+}
+
+.product h3 {
+    margin-top: 20px;
+}
+
+/* About */
+
+.about {
+    background: #f5f7f3;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Applications */
+
+.applications {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.application {
+    background: #e3ebe3;
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #234b35;
+}
+
+/* Video */
+
+.video {
+    background: #f5f7f3;
+    text-align: center;
+}
+
+.video-box {
+    max-width: 900px;
+    height: 450px;
+    margin: auto;
+    background: #cbd8cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #526657;
+}
+
+/* Contact */
+
+.contact {
+    background: #234b35;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 35px;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+footer {
+    background: #17291f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile */
+
+@media(max-width:700px) {
 
     header {
-      border-bottom: 1px solid #eeeeee;
-      background: #ffffff;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+        display: block;
+        text-align: center;
     }
 
-    .nav {
-      height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    nav {
+        margin-top: 15px;
     }
 
-    .logo {
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      color: #274936;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 30px;
-      align-items: center;
-      font-size: 15px;
-    }
-
-    .nav-links a:hover {
-      color: #6c9275;
-    }
-
-    .quote-btn {
-      background: #315a40;
-      color: white !important;
-      padding: 11px 20px;
-      border-radius: 5px;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #f4f7f2, #edf3ed);
-      padding: 90px 0;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 60px;
-      align-items: center;
+    nav a {
+        margin: 8px;
+        display: inline-block;
     }
 
     .hero h1 {
-      font-size: 52px;
-      line-height: 1.12;
-      color: #243b2d;
-      margin-bottom: 25px;
+        font-size: 40px;
     }
 
-    .hero p {
-      font-size: 19px;
-      color: #59665e;
-      max-width: 650px;
-      margin-bottom: 30px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 25px;
-      border-radius: 5px;
-      font-weight: 600;
-    }
-
-    .btn-primary {
-      background: #315a40;
-      color: white;
-    }
-
-    .btn-secondary {
-      border: 1px solid #315a40;
-      color: #315a40;
-      background: white;
-    }
-
-    .hero-image {
-      min-height: 390px;
-      border-radius: 18px;
-      background: linear-gradient(145deg, #dce8dc, #f7eee7);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 120px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.08);
-    }
-
-    section {
-      padding: 80px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      max-width: 750px;
-      margin: 0 auto 50px;
-    }
-
-    .section-title h2 {
-      font-size: 36px;
-      color: #293e31;
-      margin-bottom: 12px;
-    }
-
-    .section-title p {
-      color: #68736d;
-      font-size: 17px;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .product-card {
-      border: 1px solid #e8ece8;
-      border-radius: 12px;
-      overflow: hidden;
-      background: white;
-      transition: transform .2s, box-shadow .2s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    }
-
-    .product-image {
-      height: 220px;
-      background: #f1f5f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 75px;
-    }
-
-    .product-content {
-      padding: 22px;
-    }
-
-    .product-content h3 {
-      font-size: 21px;
-      margin-bottom: 8px;
-      color: #2d4435;
-    }
-
-    .product-content p {
-      color: #6c756f;
-      font-size: 15px;
-    }
-
-    .features {
-      background: #f6f8f5;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 25px;
-    }
-
-    .feature {
-      background: white;
-      padding: 30px 22px;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    .feature-icon {
-      font-size: 35px;
-      margin-bottom: 15px;
-    }
-
-    .feature h3 {
-      margin-bottom: 8px;
-      color: #2d4435;
-    }
-
-    .feature p {
-      font-size: 14px;
-      color: #707872;
-    }
-
+    .products,
     .applications {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .application {
-      padding: 35px 25px;
-      border: 1px solid #e5e9e5;
-      border-radius: 10px;
-    }
-
-    .application h3 {
-      color: #2d4435;
-      margin-bottom: 10px;
-      font-size: 21px;
-    }
-
-    .application p {
-      color: #69736c;
-    }
-
-    .about {
-      background: #f7f3ed;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .about-box {
-      background: #dfe9df;
-      min-height: 350px;
-      border-radius: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 100px;
-    }
-
-    .about h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: #293e31;
-    }
-
-    .about p {
-      color: #646e67;
-      margin-bottom: 18px;
-    }
-
-    .faq {
-      max-width: 850px;
-      margin: auto;
-    }
-
-    details {
-      border-bottom: 1px solid #e2e6e2;
-      padding: 20px 0;
-    }
-
-    summary {
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 17px;
-      color: #2d4435;
-    }
-
-    details p {
-      padding-top: 12px;
-      color: #69736c;
-    }
-
-    .cta {
-      background: #315a40;
-      color: white;
-      text-align: center;
-      padding: 70px 20px;
-    }
-
-    .cta h2 {
-      font-size: 38px;
-      margin-bottom: 15px;
-    }
-
-    .cta p {
-      max-width: 650px;
-      margin: 0 auto 25px;
-      opacity: .9;
-    }
-
-    .cta .btn {
-      background: white;
-      color: #315a40;
-    }
-
-    footer {
-      background: #203128;
-      color: #dce3dd;
-      padding: 45px 0;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 40px;
-    }
-
-    footer h3 {
-      color: white;
-      margin-bottom: 15px;
-    }
-
-    footer p,
-    footer a {
-      font-size: 14px;
-      color: #b8c3bb;
-    }
-
-    footer a {
-      display: block;
-      margin-bottom: 7px;
-    }
-
-    .copyright {
-      border-top: 1px solid #3b4b42;
-      margin-top: 35px;
-      padding-top: 20px;
-      font-size: 13px;
-      color: #9fac9f;
-    }
-
-    @media (max-width: 850px) {
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero {
-        padding: 60px 0;
-      }
-
-      .hero-grid,
-      .about-grid {
         grid-template-columns: 1fr;
-      }
-
-      .hero h1 {
-        font-size: 38px;
-      }
-
-      .products,
-      .applications {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .feature-grid {
-        grid-template-columns: 1fr 1fr;
-      }
     }
 
-    @media (max-width: 550px) {
+}
 
-      .products,
-      .applications,
-      .feature-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-image {
-        min-height: 280px;
-      }
-
-      section {
-        padding: 55px 0;
-      }
-
-      .section-title h2,
-      .about h2 {
-        font-size: 30px;
-      }
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
+
+<!-- Header -->
+
 <header>
-  <div class="container nav">
 
-    <a href="/" class="logo">FLORASINO</a>
+<div class="logo">
+FLORASINO
+</div>
 
-    <nav class="nav-links">
-      <a href="#products">Products</a>
-      <a href="#wholesale">Wholesale</a>
-      <a href="#applications">Applications</a>
-      <a href="#about">About Us</a>
-      <a href="#contact" class="quote-btn">Get a Quote</a>
-    </nav>
+<nav>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#applications">Applications</a>
+<a href="#video">Video</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  </div>
 </header>
 
 
-<main>
+<!-- Home -->
 
-<!-- HERO -->
 <section class="hero">
-  <div class="container hero-grid">
 
-    <div>
-      <h1>Artificial Flowers Manufacturer & Wholesale Supplier</h1>
+<h1>
+Artificial Plants & Flowers
+</h1>
 
-      <p>
-        Florasino provides high-quality artificial flowers and faux floral
-        products for wholesalers, retailers, wedding planners, interior
-        designers and commercial decoration projects worldwide.
-      </p>
+<p>
+Wholesale Artificial Greenery Solutions
+</p>
 
-      <div class="hero-buttons">
-        <a href="#products" class="btn btn-primary">Explore Products</a>
-        <a href="#contact" class="btn btn-secondary">Get a Wholesale Quote</a>
-      </div>
-    </div>
+<p>
+Factory Direct • OEM & ODM • Global Wholesale
+</p>
 
-    <div class="hero-image">
-      🌸🌿
-    </div>
+<a href="#contact" class="button">
+Get A Quote
+</a>
 
-  </div>
 </section>
 
 
-<!-- PRODUCTS -->
+<!-- Products -->
+
 <section id="products">
-  <div class="container">
 
-    <div class="section-title">
-      <h2>Artificial plants</h2>
-      <p>
-        Explore our collection of realistic artificial flowers and plants for wholesale,
-        retail, weddings, events and home decoration.
-      </p>
-    </div>
+<div class="title">
 
-    <div class="products">
+<h2>Our Products</h2>
 
-      <a href="/artificial-green-wall/" class="product-card">
-        <div class="product-image">🌹</div>
-        <div class="product-content">
-          <h3>Artificial green wall</h3>
-          <p>Realistic faux green wall in a wide range of colors and styles.</p>
-        </div>
-      </a>
+<p>
+Artificial greenery for wholesale and commercial projects.
+</p>
 
-      <a href="/artificial-vertical-garden/" class="product-card">
-        <div class="product-image">🌸</div>
-        <div class="product-content">
-          <h3>Artificial vertical garden/h3>
-          <p>Elegant artificial vertical garden for garden, coffee shop, shopping mall and decoration.</p>
-        </div>
-      </a>
-
-      <a href="/artificial-olive tree/" class="product-card">
-        <div class="product-image">💠</div>
-        <div class="product-content">
-          <h3>Artificial olive</h3>
-          <p>Full and natural-looking faux olive tree.</p>
-        </div>
-      </a>
-
-      <a href="/artificial-tree/" class="product-card">
-        <div class="product-image">🌷</div>
-        <div class="product-content">
-          <h3>Artificial trees</h3>
-          <p>Modern artificial trees for home and commercial interiors.</p>
-        </div>
-      </a>
-
-      <a href="/artificial-boxwood/" class="product-card">
-        <div class="product-image">🌻</div>
-        <div class="product-content">
-          <h3>Artificial boxwood</h3>
-          <p>Bright faux boxwood for seasonal and everyday decoration.</p>
-        </div>
-      </a>
-
-      <a href="/artificial-flower-arrangements/" class="product-card">
-        <div class="product-image">💐</div>
-        <div class="product-content">
-          <h3>Flower Arrangements</h3>
-          <p>Ready-made artificial flower arrangements and custom designs.</p>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
+</div>
 
 
-<!-- WHY FLORASINO -->
-<section class="features" id="wholesale">
-
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Why Choose Florasino?</h2>
-      <p>
-        A reliable artificial flowers supplier for wholesale and custom projects.
-      </p>
-    </div>
-
-    <div class="feature-grid">
-
-      <div class="feature">
-        <div class="feature-icon">🏭</div>
-        <h3>Factory Direct</h3>
-        <p>Direct manufacturing and competitive wholesale pricing.</p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">🎨</div>
-        <h3>OEM & ODM</h3>
-        <p>Custom colors, designs, packaging and product solutions.</p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">📦</div>
-        <h3>Wholesale Orders</h3>
-        <p>Flexible solutions for wholesalers, retailers and projects.</p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">🌎</div>
-        <h3>Global Supply</h3>
-        <p>Supporting customers and projects in international markets.</p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+<div class="products">
 
 
-<!-- APPLICATIONS -->
-<section id="applications">
+<div class="product">
 
-  <div class="container">
+<div class="product-image">
+PRODUCT IMAGE
+</div>
 
-    <div class="section-title">
-      <h2>Artificial Flowers for Every Occasion</h2>
-      <p>
-        Faux flowers are a practical and beautiful solution for many
-        residential and commercial applications.
-      </p>
-    </div>
+<h3>Artificial Flowers</h3>
 
-    <div class="applications">
+<p>
+Realistic artificial flowers for decoration.
+</p>
 
-      <div class="application">
-        <h3>Wedding Flowers</h3>
-        <p>
-          Artificial flowers for wedding bouquets, centerpieces,
-          arches and event decoration.
-        </p>
-      </div>
+</div>
 
-      <div class="application">
-        <h3>Home Decoration</h3>
-        <p>
-          Low-maintenance faux flowers for living rooms, bedrooms,
-          dining rooms and other interiors.
-        </p>
-      </div>
 
-      <div class="application">
-        <h3>Hotels & Restaurants</h3>
-        <p>
-          Long-lasting artificial floral decoration for hotels,
-          restaurants and commercial spaces.
-        </p>
-      </div>
+<div class="product">
 
-      <div class="application">
-        <h3>Retail Stores</h3>
-        <p>
-          Artificial flowers designed for flower shops, home stores
-          and retail businesses.
-        </p>
-      </div>
+<div class="product-image">
+PRODUCT IMAGE
+</div>
 
-      <div class="application">
-        <h3>Events & Exhibitions</h3>
-        <p>
-          Decorative faux flowers for exhibitions, parties,
-          conferences and special events.
-        </p>
-      </div>
+<h3>Artificial Plants</h3>
 
-      <div class="application">
-        <h3>Interior Design</h3>
-        <p>
-          Flexible artificial floral solutions for interior designers
-          and commercial decoration projects.
-        </p>
-      </div>
+<p>
+Artificial plants for homes, hotels and businesses.
+</p>
 
-    </div>
+</div>
 
-  </div>
+
+<div class="product">
+
+<div class="product-image">
+PRODUCT IMAGE
+</div>
+
+<h3>Green Walls</h3>
+
+<p>
+Artificial vertical garden and green wall solutions.
+</p>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-image">
+PRODUCT IMAGE
+</div>
+
+<h3>Artificial Trees</h3>
+
+<p>
+Decorative artificial trees for commercial spaces.
+</p>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-image">
+PRODUCT IMAGE
+</div>
+
+<h3>Artificial Hedges</h3>
+
+<p>
+Artificial hedge panels for indoor and outdoor use.
+</p>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-image">
+PRODUCT IMAGE
+</div>
+
+<h3>Flower Arrangements</h3>
+
+<p>
+Customized floral arrangements for projects and events.
+</p>
+
+</div>
+
+
+</div>
 
 </section>
 
 
-<!-- ABOUT -->
+<!-- About -->
+
 <section class="about" id="about">
 
-  <div class="container about-grid">
+<div class="title">
 
-    <div class="about-box">
-      🌿🌸
-    </div>
+<h2>About FLORASINO</h2>
 
-    <div>
+</div>
 
-      <h2>About Florasino</h2>
+<p>
 
-      <p>
-        Florasino focuses on artificial plants and faux floral products
-        for global customers. We aim to provide realistic designs,
-        reliable quality and flexible solutions for wholesale and
-        customized projects.
-      </p>
+FLORASINO specializes in artificial plants, artificial flowers
+and greenery products for wholesale customers and commercial projects.
 
-      <p>
-        From individual plant stems to complete artificial walls and trees, we help customers find suitable products for
-        retail, decoration, weddings and commercial applications.
-      </p>
+We provide product sourcing, customization and OEM / ODM solutions
+for distributors, wholesalers, retailers, designers and project buyers.
 
-      <a href="#contact" class="btn btn-primary">
-        Contact Florasino
-      </a>
-
-    </div>
-
-  </div>
+</p>
 
 </section>
 
 
-<!-- FAQ -->
-<section>
+<!-- Applications -->
 
-  <div class="container">
+<section id="applications">
 
-    <div class="section-title">
-      <h2>Frequently Asked Questions</h2>
-      <p>Common questions about our artificial plants and wholesale service.</p>
-    </div>
+<div class="title">
 
-    <div class="faq">
+<h2>Applications</h2>
 
-      <details>
-        <summary>Are you an artificial plants manufacturer?</summary>
-        <p>
-          Florasino provides artificial plants and faux floral products
-          for wholesale, retail and customized projects.
-        </p>
-      </details>
+<p>
+Our artificial greenery can be used in many different spaces.
+</p>
 
-      <details>
-        <summary>Do you provide wholesale artificial plants?</summary>
-        <p>
-          Yes. We support wholesale customers, retailers, distributors
-          and commercial decoration projects.
-        </p>
-      </details>
+</div>
 
-      <details>
-        <summary>Can you customize artificial flowers and plants?</summary>
-        <p>
-          We can discuss custom colors, designs, packaging and other
-          OEM or ODM requirements according to your project.
-        </p>
-      </details>
 
-      <details>
-        <summary>Can I request a product catalog or quotation?</summary>
-        <p>
-          Yes. Contact us with your requirements and we can provide
-          suitable product information and quotation details.
-        </p>
-      </details>
+<div class="applications">
 
-    </div>
+<div class="application">
+Hotels & Resorts
+</div>
 
-  </div>
+<div class="application">
+Restaurants & Cafés
+</div>
+
+<div class="application">
+Retail Stores
+</div>
+
+<div class="application">
+Weddings & Events
+</div>
+
+<div class="application">
+Home Decoration
+</div>
+
+<div class="application">
+Commercial Projects
+</div>
+
+</div>
 
 </section>
 
 
-<!-- CTA -->
-<section class="cta" id="contact">
+<!-- Video -->
 
-  <div class="container">
+<section class="video" id="video">
 
-    <h2>Looking for Artificial Flowers and Plants?</h2>
+<div class="title">
 
-    <p>
-      Tell us what products you need, your quantity and your target market.
-      Our team can help you find a suitable artificial flower and plant solution.
-    </p>
+<h2>Our Factory & Products</h2>
 
-    <a href="mailto:sinofloraco@gmail.com" class="btn">
-      Get a Wholesale Quote
-    </a>
+<p>
+Factory video and product videos will be added here.
+</p>
 
-  </div>
+</div>
+
+
+<div class="video-box">
+
+YOUR VIDEO HERE
+
+</div>
 
 </section>
 
-</main>
+
+<!-- Contact -->
+
+<section class="contact" id="contact">
+
+<h2>
+Let's Work Together
+</h2>
+
+<p>
+Looking for artificial plants, flowers or custom greenery?
+</p>
+
+<p>
+Email: YOUR EMAIL
+</p>
+
+<p>
+WhatsApp: YOUR WHATSAPP
+</p>
+
+<a href="mailto:YOUR EMAIL" class="button">
+Contact Us
+</a>
+
+</section>
 
 
-<!-- FOOTER -->
+<!-- Footer -->
+
 <footer>
 
-  <div class="container">
-
-    <div class="footer-grid">
-
-      <div>
-        <h3>FLORASINO</h3>
-        <p>
-          Artificial trees manufacturer and wholesale supplier
-          for global customers.
-        </p>
-      </div>
-
-      <div>
-        <h3>Products</h3>
-        <a href="/artificial-green-wall/">Artificial wall grass</a>
-        <a href="/artificial-vertical-garden/">Artificial vertical garden</a>
-        <a href="/artificial-olive-tree/">Artificial olive tree</a>
-        <a href="/artificial-boxwood/">Artificial boxwood/a>
-        <a href="/artificial-flower-arrangements/">Flower Arrangements</a>
-      </div>
-
-      <div>
-        <h3>Contact</h3>
-        <a href="mailto:sinofloraco@gmail.com">sinofloraco@gmail.com</a>
-        <a href="#contact">Request a Quote</a>
-      </div>
-
-    </div>
-
-    <div class="copyright">
-      © 2026 Florasino. All Rights Reserved.
-    </div>
-
-  </div>
+FLORASINO © 2026
 
 </footer>
 
+
 </body>
 </html>
+```
