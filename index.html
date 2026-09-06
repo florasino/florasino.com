@@ -34,6 +34,12 @@ header {
     color: #234b35;
 }
 
+.logo img {
+    width: 160px;
+    height: auto;
+    display: block;
+}
+
 nav a {
     margin-left: 25px;
     text-decoration: none;
@@ -45,12 +51,22 @@ nav a:hover {
 }
 
 .hero {
-    background: #315b42;
+    background:
+        linear-gradient(rgba(35, 75, 53, 0.45), rgba(35, 75, 53, 0.45)),
+        url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
-    padding: 120px 8%;
     text-align: center;
+    padding: 80px 8%;
 }
-
+    
 .hero h1 {
     font-size: 55px;
     margin: 0 0 20px;
@@ -97,13 +113,20 @@ section {
     padding-bottom: 20px;
 }
 
-.product-image {
+.product image {
     height: 220px;
     background: #dfe8df;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #607566;
+}
+
+.product image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .product h3 {
@@ -133,8 +156,20 @@ section {
 
 .application {
     background: #e3ebe3;
-    padding: 50px 20px;
     text-align: center;
+    overflow: hidden;
+}
+
+.application img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.application h3 {
+    margin: 0;
+    padding: 20px 10px;
     font-size: 20px;
     color: #234b35;
 }
@@ -278,7 +313,7 @@ Artificial greenery for wholesale and commercial projects.
 <div class="product">
 
 <div class="product-image">
-PRODUCT IMAGE
+<img src="images/artificial flowers.jpg" alt="Artificial Flowers">
 </div>
 
 <h3>Artificial Flowers</h3>
@@ -293,7 +328,7 @@ Realistic artificial flowers for decoration.
 <div class="product">
 
 <div class="product-image">
-PRODUCT IMAGE
+<img src="images/artificial plants.jpg" alt="Artificial Plants">
 </div>
 
 <h3>Artificial Plants</h3>
@@ -307,12 +342,12 @@ Artificial plants for homes, hotels and businesses.
 
 <div class="product">
 
-<div class="product-image">
-PRODUCT IMAGE
+<div class="product image">
+<img src="images/artificial green wall.jpg" alt="Green Walls">
 </div>
 
 <h3>Green Walls</h3>
-
+ 
 <p>
 Artificial vertical garden and green wall solutions.
 </p>
@@ -322,8 +357,8 @@ Artificial vertical garden and green wall solutions.
 
 <div class="product">
 
-<div class="product-image">
-PRODUCT IMAGE
+<div class="product image">
+ <img src="images/artificial trees.jpg" alt="Artificial Trees">
 </div>
 
 <h3>Artificial Trees</h3>
@@ -337,8 +372,8 @@ Decorative artificial trees for commercial spaces.
 
 <div class="product">
 
-<div class="product-image">
-PRODUCT IMAGE
+<div class="product image">
+<img src="images/artificial hedge.jpg" alt="Artificial Hedges">
 </div>
 
 <h3>Artificial Hedges</h3>
@@ -352,8 +387,8 @@ Artificial hedge panels for indoor and outdoor use.
 
 <div class="product">
 
-<div class="product-image">
-PRODUCT IMAGE
+<div class="product image">
+<img src="images/flower arrangements.jpg" alt="Flower Arrangements">
 </div>
 
 <h3>Flower Arrangements</h3>
@@ -397,44 +432,44 @@ for distributors, wholesalers, retailers, designers and project buyers.
 
 <section id="applications">
 
-<div class="title">
+    <div class="title">
+        <h2>Applications</h2>
+        <p>Our artificial greenery can be used in many different spaces.</p>
+    </div>
 
-<h2>Applications</h2>
+    <div class="applications">
 
-<p>
-Our artificial greenery can be used in many different spaces.
-</p>
+        <div class="application">
+            <img src="images/restaurant.jpg" alt="Hotels & Resorts">
+            <h3>Hotels & Resorts</h3>
+        </div>
 
-</div>
+        <div class="application">
+            <img src="images/restaurant.jpg" alt="Restaurants & Cafés">
+            <h3>Restaurants & Cafés</h3>
+        </div>
 
+        <div class="application">
+            <img src="images/retail store.jpg" alt="Retail Stores">
+            <h3>Retail Stores</h3>
+        </div>
 
-<div class="applications">
+        <div class="application">
+            <img src="images/wedding.jpg" alt="Weddings & Events">
+            <h3>Weddings & Events</h3>
+        </div>
 
-<div class="application">
-Hotels & Resorts
-</div>
+        <div class="application">
+            <img src="images/home decoration.jpg" alt="Home Decoration">
+            <h3>Home Decoration</h3>
+        </div>
 
-<div class="application">
-Restaurants & Cafés
-</div>
+        <div class="application">
+            <img src="images/commercial projects.jpg" alt="Commercial Projects">
+            <h3>Commercial Projects</h3>
+        </div>
 
-<div class="application">
-retail store.jpg
-</div>
-
-<div class="application">
-wedding.jpg
-</div>
-
-<div class="application">
-home decoration.jpg
-</div>
-
-<div class="application">
-commercial projects.jpg
-</div>
-
-</div>
+    </div>
 
 </section>
 
